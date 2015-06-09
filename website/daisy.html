@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Daisy - data made easy</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.fileupload.css">
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">daisy</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <!--
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul> -->
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Welcome to Daisy</h1>
+        <p>data made easy</p>
+
+      </div>
+
+
+      <div class="well">
+        <p>Data science is a field that requires skills across many different disciplines. Data scientists can be divided into three groups: data engineers, data analysts, and data stewards. Project Daisy attempts to help all three types of people reach their research goals. Researchers who need datasets to answer their questions can use the data collection tools to easily gather data or use datasets made by others. Those who need help with analysis can use code written by others over their dataset. People with the technical and analysis skills can find interesting datasets to work with.</p>
+
+        <p> Daisy brings together these people from different backgrounds into a collaborative environment in which researchers can easily and openly find data and code for analysis and visualization. This allows all people regardless of experience, skill, or discipline participate in research.</p>
+      </div>
+
+
+      <div class="page-header">
+        <h1>Get Data</h1>
+      </div>
+
+      <h2>Twitter</h2>
+
+      <p>
+       
+        <button type="execute" class="btn btn-lg btn-info">Get Latest Public Tweets</button>
+       
+      <p>
+        <form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Keyword</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="osdcpire15">
+  </div>
+
+  <button type="button" class="btn btn-lg btn-primary">Get Tweets with Keyword</button>
+
+</form>
+
+<!--
+        <label for="source_id" class="col-sm-1 control-label">Keyword</label>
+       
+            <input type="text" class="form-control" id="sourcei">
+      
+
+        <button type="button" class="btn btn-lg btn-primary">Get Tweets with Keyword</button>
+-->
+      </p>
+
+<textarea class="form-control" rows="10" placeholder = "Status(contributors=None, truncated=False, text=u'On my way to Amsterdam for @OSDCpire #datascience and #cloudcomputing workshop! #osdcpire15', is_quote_status=False, in_reply_to_status_id=None, id=607317798809948163, favorite_count=4, _api=<tweepy.api.API object at 0x10c6e84d0>, author=User(follow_request_sent=False, profile_use_background_image=False, _json={u'follow_request_sent': False, u'profile_use_background_image': False, u'default_profile_image': False, u'id': 2431454917, u'profile_background_image_url_https': u'https://abs.twimg.com/images/themes/theme1/bg.png', u'verified': False, u'profile_text_color': u'000000', u'profile_image_url_https': u'https://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', u'profile_sidebar_fill_color': u'000000', u'entities': {u'url': {u'urls': [{u'url': u'http://t.co/y3YaklEYnE', u'indices': [0, 22], u'expanded_url': u'http://opensciencecafe.org', u'display_url': u'opensciencecafe.org'}]}, u'description': {u'urls': []}}, u'followers_count': 176, u'profile_sidebar_border_color': u'000000', u'id_str': u'2431454917', u'profile_background_color': u'000000', u'listed_count': 16, u'is_translation_enabled': False, u'utc_offset': -14400, u'statuses_count': 230, u'description': u'Love all things related to cross-disciplinary data science and open, reproducible research.  @UChicago alum, Astro PhD, now in Dept of Medicine.', u'friends_count': 726, u'location': u'the cloud', u'profile_link_color': u'880066', u'profile_image_url': u'http://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', u'following': False, u'geo_enabled': False, u'profile_banner_url': u'https://pbs.twimg.com/profile_banners/2431454917/1414640833', u'profile_background_image_url': u'http://abs.twimg.com/images/themes/theme1/bg.png', u'screen_name': u'OpenScienceCafe', u'lang': u'en', u'profile_background_tile': False, u'favourites_count': 47, u'name': u'Maria Patterson', u'notifications': False, u'url': u'http://t.co/y3YaklEYnE', u'created_at': u'Mon Apr 07 04:20:46 +0000 2014', u'contributors_enabled': False, u'time_zone': u'Eastern Time (US & Canada)', u'protected': False, u'default_profile': False, u'is_translator': False}, time_zone=u'Eastern Time (US & Canada)', id=2431454917, _api=<tweepy.api.API object at 0x10c6e84d0>, verified=False, profile_text_color=u'000000', profile_image_url_https=u'https://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', profile_sidebar_fill_color=u'000000', is_translator=False, geo_enabled=False, entities={u'url': {u'urls': [{u'url': u'http://t.co/y3YaklEYnE', u'indices': [0, 22], u'expanded_url': u'http://opensciencecafe.org', u'display_url': u'opensciencecafe.org'}]}, u'description': {u'urls': []}}, followers_count=176, protected=False, id_str=u'2431454917', default_profile_image=False, listed_count=16, lang=u'en', utc_offset=-14400, statuses_count=230, description=u'Love all things related to cross-disciplinary data science and open, reproducible research.  @UChicago alum, Astro PhD, now in Dept of Medicine.', friends_count=726, profile_link_color=u'880066', profile_image_url=u'http://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', notifications=False, profile_background_image_url_https=u'https://abs.twimg.com/images/themes/theme1/bg.png', profile_background_color=u'000000', profile_banner_url=u'https://pbs.twimg.com/profile_banners/2431454917/1414640833', profile_background_image_url=u'http://abs.twimg.com/images/themes/theme1/bg.png', name=u'Maria Patterson', is_translation_enabled=False, profile_background_tile=False, favourites_count=47, screen_name=u'OpenScienceCafe', url=u'http://t.co/y3YaklEYnE', created_at=datetime.datetime(2014, 4, 7, 4, 20, 46), contributors_enabled=False, location=u'the cloud', profile_sidebar_border_color=u'000000', default_profile=False, following=False), _json={u'contributors': None, u'truncated': False, u'text': u'On my way to Amsterdam for @OSDCpire #datascience and #cloudcomputing workshop! #osdcpire15', u'is_quote_status': False, u'in_reply_to_status_id': None, u'id': 607317798809948163, u'favorite_count': 4, u'source': u'<a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>', u'retweeted': False, u'coordinates': None, u'entities': {u'symbols': [], u'user_mentions': [{u'id': 2564730816, u'indices': [27, 36], u'id_str': u'2564730816', u'screen_name': u'OSDCpire', u'name': u'OpenScienceDataCloud'}], u'hashtags': [{u'indices': [37, 49], u'text': u'datascience'}, {u'indices': [54, 69], u'text': u'cloudcomputing'}, {u'indices': [80, 91], u'text': u'osdcpire15'}], u'urls': []}, u'in_reply_to_screen_name': None, u'in_reply_to_user_id': None, u'retweet_count': 1, u'id_str': u'607317798809948163', u'favorited': False, u'user': {u'follow_request_sent': False, u'profile_use_background_image': False, u'default_profile_image': False, u'id': 2431454917, u'profile_background_image_url_https': u'https://abs.twimg.com/images/themes/theme1/bg.png', u'verified': False, u'profile_text_color': u'000000', u'profile_image_url_https': u'https://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', u'profile_sidebar_fill_color': u'000000', u'entities': {u'url': {u'urls': [{u'url': u'http://t.co/y3YaklEYnE', u'indices': [0, 22], u'expanded_url': u'http://opensciencecafe.org', u'display_url': u'opensciencecafe.org'}]}, u'description': {u'urls': []}}, u'followers_count': 176, u'profile_sidebar_border_color': u'000000', u'id_str': u'2431454917', u'profile_background_color': u'000000', u'listed_count': 16, u'is_translation_enabled': False, u'utc_offset': -14400, u'statuses_count': 230, u'description': u'Love all things related to cross-disciplinary data science and open, reproducible research.  @UChicago alum, Astro PhD, now in Dept of Medicine.', u'friends_count': 726, u'location': u'the cloud', u'profile_link_color': u'880066', u'profile_image_url': u'http://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', u'following': False, u'geo_enabled': False, u'profile_banner_url': u'https://pbs.twimg.com/profile_banners/2431454917/1414640833', u'profile_background_image_url': u'http://abs.twimg.com/images/themes/theme1/bg.png', u'screen_name': u'OpenScienceCafe', u'lang': u'en', u'profile_background_tile': False, u'favourites_count': 47, u'name': u'Maria Patterson', u'notifications': False, u'url': u'http://t.co/y3YaklEYnE', u'created_at': u'Mon Apr 07 04:20:46 +0000 2014', u'contributors_enabled': False, u'time_zone': u'Eastern Time (US & Canada)', u'protected': False, u'default_profile': False, u'is_translator': False}, u'geo': None, u'in_reply_to_user_id_str': None, u'lang': u'en', u'created_at': u'Sat Jun 06 22:47:01 +0000 2015', u'in_reply_to_status_id_str': None, u'place': None, u'metadata': {u'iso_language_code': u'en', u'result_type': u'recent'}}, coordinates=None, entities={u'symbols': [], u'user_mentions': [{u'id': 2564730816, u'indices': [27, 36], u'id_str': u'2564730816', u'screen_name': u'OSDCpire', u'name': u'OpenScienceDataCloud'}], u'hashtags': [{u'indices': [37, 49], u'text': u'datascience'}, {u'indices': [54, 69], u'text': u'cloudcomputing'}, {u'indices': [80, 91], u'text': u'osdcpire15'}], u'urls': []}, in_reply_to_screen_name=None, id_str=u'607317798809948163', retweet_count=1, in_reply_to_user_id=None, favorited=False, source_url=u'http://twitter.com/download/android', user=User(follow_request_sent=False, profile_use_background_image=False, _json={u'follow_request_sent': False, u'profile_use_background_image': False, u'default_profile_image': False, u'id': 2431454917, u'profile_background_image_url_https': u'https://abs.twimg.com/images/themes/theme1/bg.png', u'verified': False, u'profile_text_color': u'000000', u'profile_image_url_https': u'https://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', u'profile_sidebar_fill_color': u'000000', u'entities': {u'url': {u'urls': [{u'url': u'http://t.co/y3YaklEYnE', u'indices': [0, 22], u'expanded_url': u'http://opensciencecafe.org', u'display_url': u'opensciencecafe.org'}]}, u'description': {u'urls': []}}, u'followers_count': 176, u'profile_sidebar_border_color': u'000000', u'id_str': u'2431454917', u'profile_background_color': u'000000', u'listed_count': 16, u'is_translation_enabled': False, u'utc_offset': -14400, u'statuses_count': 230, u'description': u'Love all things related to cross-disciplinary data science and open, reproducible research.  @UChicago alum, Astro PhD, now in Dept of Medicine.', u'friends_count': 726, u'location': u'the cloud', u'profile_link_color': u'880066', u'profile_image_url': u'http://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', u'following': False, u'geo_enabled': False, u'profile_banner_url': u'https://pbs.twimg.com/profile_banners/2431454917/1414640833', u'profile_background_image_url': u'http://abs.twimg.com/images/themes/theme1/bg.png', u'screen_name': u'OpenScienceCafe', u'lang': u'en', u'profile_background_tile': False, u'favourites_count': 47, u'name': u'Maria Patterson', u'notifications': False, u'url': u'http://t.co/y3YaklEYnE', u'created_at': u'Mon Apr 07 04:20:46 +0000 2014', u'contributors_enabled': False, u'time_zone': u'Eastern Time (US & Canada)', u'protected': False, u'default_profile': False, u'is_translator': False}, time_zone=u'Eastern Time (US & Canada)', id=2431454917, _api=<tweepy.api.API object at 0x10c6e84d0>, verified=False, profile_text_color=u'000000', profile_image_url_https=u'https://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', profile_sidebar_fill_color=u'000000', is_translator=False, geo_enabled=False, entities={u'url': {u'urls': [{u'url': u'http://t.co/y3YaklEYnE', u'indices': [0, 22], u'expanded_url': u'http://opensciencecafe.org', u'display_url': u'opensciencecafe.org'}]}, u'description': {u'urls': []}}, followers_count=176, protected=False, id_str=u'2431454917', default_profile_image=False, listed_count=16, lang=u'en', utc_offset=-14400, statuses_count=230, description=u'Love all things related to cross-disciplinary data science and open, reproducible research.  @UChicago alum, Astro PhD, now in Dept of Medicine.', friends_count=726, profile_link_color=u'880066', profile_image_url=u'http://pbs.twimg.com/profile_images/599051128764956672/mUF0uFOZ_normal.jpg', notifications=False, profile_background_image_url_https=u'https://abs.twimg.com/images/themes/theme1/bg.png', profile_background_color=u'000000', profile_banner_url=u'https://pbs.twimg.com/profile_banners/2431454917/1414640833', profile_background_image_url=u'http://abs.twimg.com/images/themes/theme1/bg.png', name=u'Maria Patterson', is_translation_enabled=False, profile_background_tile=False, favourites_count=47, screen_name=u'OpenScienceCafe', url=u'http://t.co/y3YaklEYnE', created_at=datetime.datetime(2014, 4, 7, 4, 20, 46), contributors_enabled=False, location=u'the cloud', profile_sidebar_border_color=u'000000', default_profile=False, following=False), geo=None, in_reply_to_user_id_str=None, lang=u'en', created_at=datetime.datetime(2015, 6, 6, 22, 47, 1), in_reply_to_status_id_str=None, place=None, source=u'Twitter for Android', retweeted=False, metadata={u'iso_language_code': u'en', u'result_type': u'recent'})"></textarea>
+
+      <div class="page-header">
+        <h1>Analysis and Visualization</h1>
+      </div>
+
+      <h2>Text Analysis</h2>
+      
+      <div class="container">
+
+      <br>
+      <span class="btn btn-lg btn-success fileinput-button">
+        <i class="glyphicon glyphicon-plus"></i>
+        <span>Add files...</span>
+        <!-- The file input field used as target for the file upload widget -->
+        <input id="fileupload" type="file" name="files[]" multiple>
+    </span>
+    <br>
+     <div id="files" class="files"></div>
+     <br>
+    </div>
+ 
+    <div id="files" class="files"></div>
+  <br>
+  <!-- <h2><span class="label label-primary">Arithmetic Compression</span></h2>
+  <h2><span class="label label-primary">Hidden Markov Model</span></h2> -->
+
+<textarea class="form-control" rows="10" placeholder = "{`headline`: `amlightus`, `keywords`: [{`name`: `NNS`, `value`: `https`}, {`name`: `NN`, `value`: `aist`}, {`name`: `NN`, `value`: `japan`}, {`name`: `NN`, `value`: `learning`}, {`name`: `NN`, `value`: `library`}, {`name`: `NN`, `value`: `machine`}, {`name`: `NN`, `value`: `opensciencecafe`}, {`name`: `NN`, `value`: `osdcpire`}], `lead_paragraph`: `RT @OpenScienceCafe: scalable machine learning library for Hive/Hadoop from AIST in Japan @OSDCpire #osdcpire15 https://t.co/IVNWN6l8Dx`, `pub_date`: `2015-06-09T14:00:19Z`}
+{`headline`: `amlightus`, `keywords`: [{`name`: `VB`, `value`: `make`}, {`name`: `NN`, `value`: `napkin`}, {`name`: `NN`, `value`: `vivalarouge`}, {`name`: `NNS`, `value`: `cees`}, {`name`: `NNP`, `value`: `cookies`}, {`name`: `NNP`, `value`: `…`}], `lead_paragraph`: `RT @VivaLaRouge: Cees de Laat: \`This is how we do science: first we eat these cookies. THen we use the napkin to make a plan.\` #osdcpire15 …`, `pub_date`: `2015-06-09T13:59:19Z`}
+{`headline`: `amlightus`, `keywords`: [{`name`: `VBG`, `value`: `exciting`}, {`name`: `VBG`, `value`: `hosting`}, {`name`: `NNS`, `value`: `talks`}, {`name`: `NN`, `value`: `commit`}, {`name`: `NN`, `value`: `on…`}, {`name`: `NN`, `value`: `paolagrossowork`}, {`name`: `NN`, `value`: `uva`}, {`name`: `NN`, `value`: `week`}, {`name`: `NN`, `value`: `workshop`}], `lead_paragraph`: `RT @PaolaGrossoWork: Here we are.  #UvA #SNE #COMMIT are hosting again the #OSDCPIRE15 workshop: one week of exciting talks and tutorial on…`, `pub_date`: `2015-06-09T13:58:49Z`}
+{`headline`: `kathycorniels`, `keywords`: [{`name`: `VB`, `value`: `fall`}, {`name`: `NNS`, `value`: `data`}, {`name`: `NNS`, `value`: `causes`}, {`name`: `NNS`, `value`: `factors`}, {`name`: `NN`, `value`: `analysis`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `smatlockuncc`}, {`name`: `NNP`, `value`: `potential`}, {`name`: `NNP`, `value`: `…`}], `lead_paragraph`: `RT @smatlockuncc: Human factors in data intensive science causes effective data analysis to fall short of potential. @OSDCpire #osdcpire15 …`, `pub_date`: `2015-06-09T13:05:19Z`}
+{`headline`: `zorm`, `keywords`: [{`name`: `VBZ`, `value`: `talks`}, {`name`: `NNS`, `value`: `colleagues`}, {`name`: `NN`, `value`: `follow`}, {`name`: `NN`, `value`: `great`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `week`}, {`name`: `NNP`, `value`: `data/cloud`}], `lead_paragraph`: `Follow my colleagues at @OSDCpire if you’re interested in big data/cloud. Great talks this week at #osdcpire15`, `pub_date`: `2015-06-09T12:44:01Z`}
+{`headline`: `homeAIinfo`, `keywords`: [{`name`: `VB`, `value`: `predict`}, {`name`: `VBP`, `value`: `use`}, {`name`: `NNS`, `value`: `data`}, {`name`: `NNS`, `value`: `keywords`}, {`name`: `NNS`, `value`: `people`}, {`name`: `NN`, `value`: `meta`}, {`name`: `NN`, `value`: `datascience`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `problem`}], `lead_paragraph`: `RT @JPiscionere: Meta problem for meta data: how to predict the keywords people use in their meta data. @OSDCpire #osdcpire15 #datascience`, `pub_date`: `2015-06-09T12:37:00Z`}
+{`headline`: `thaumkid`, `keywords`: [{`name`: `VBG`, `value`: `developing`}, {`name`: `VBN`, `value`: `distributed`}, {`name`: `NN`, `value`: `library`}, {`name`: `NN`, `value`: `osdcpire…`}, {`name`: `NN`, `value`: `python`}, {`name`: `NNP`, `value`: `applications`}, {`name`: `NNP`, `value`: `dispel4py`}], `lead_paragraph`: `RT @smatlockuncc: Dispel4py: a free python library for developing distributed data-intensive applications.\nhttp://t.co/Q39sSJyuSL\n@OSDCpire…`, `pub_date`: `2015-06-09T12:29:16Z`}
+{`headline`: `JPiscionere`, `keywords`: [{`name`: `VB`, `value`: `predict`}, {`name`: `VBP`, `value`: `use`}, {`name`: `NNS`, `value`: `data`}, {`name`: `NNS`, `value`: `keywords`}, {`name`: `NNS`, `value`: `people`}, {`name`: `NN`, `value`: `meta`}, {`name`: `NN`, `value`: `datascience`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `problem`}], `lead_paragraph`: `Meta problem for meta data: how to predict the keywords people use in their meta data. @OSDCpire #osdcpire15 #datascience`, `pub_date`: `2015-06-09T12:26:10Z`}
+{`headline`: `NoSQLDigest`, `keywords`: [{`name`: `NNS`, `value`: `https`}, {`name`: `NN`, `value`: `aist`}, {`name`: `NN`, `value`: `japan`}, {`name`: `NN`, `value`: `learning`}, {`name`: `NN`, `value`: `library`}, {`name`: `NN`, `value`: `machine`}, {`name`: `NN`, `value`: `opensciencecafe`}, {`name`: `NN`, `value`: `osdcpire`}], `lead_paragraph`: `RT @OpenScienceCafe: scalable machine learning library for Hive/Hadoop from AIST in Japan @OSDCpire #osdcpire15 https://t.co/IVNWN6l8Dx`, `pub_date`: `2015-06-09T11:21:19Z`}
+{`headline`: `VivaLaRouge`, `keywords`: [{`name`: `NNS`, `value`: `https`}, {`name`: `VBN`, `value`: `surprised`}], `lead_paragraph`: `I was surprised by this. #osdcpire15 https://t.co/s4t9iSiqGW`, `pub_date`: `2015-06-09T11:01:14Z`}
+{`headline`: `VivaLaRouge`, `keywords`: [{`name`: `VB`, `value`: `make`}, {`name`: `VBP`, `value`: `de`}, {`name`: `NN`, `value`: `napkin`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `science`}, {`name`: `NNS`, `value`: `cees`}], `lead_paragraph`: `Cees de Laat: \`This is how we do science: first we eat these cookies. THen we use the napkin to make a plan.\` #osdcpire15 @OSDCpire`, `pub_date`: `2015-06-09T10:49:20Z`}
+{`headline`: `JPiscionere`, `keywords`: [{`name`: `NNS`, `value`: `dwarves`}, {`name`: `NNS`, `value`: `hours`}, {`name`: `NNS`, `value`: `videos`}, {`name`: `VBN`, `value`: `uploaded`}, {`name`: `NN`, `value`: `business`}, {`name`: `NN`, `value`: `email`}, {`name`: `NN`, `value`: `minute`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `sent`}, {`name`: `NN`, `value`: `size`}, {`name`: `NN`, `value`: `year`}, {`name`: `NN`, `value`: `youtube`}], `lead_paragraph`: `Every minute 30 hours of @YouTube videos of uploaded, but the size of business email sent per year dwarves it. @OSDCpire #osdcpire15`, `pub_date`: `2015-06-09T10:38:23Z`}
+{`headline`: `JPiscionere`, `keywords`: [{`name`: `NN`, `value`: `capacity`}, {`name`: `NN`, `value`: `intersection`}, {`name`: `NN`, `value`: `law`}, {`name`: `NN`, `value`: `model`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NNS`, `value`: `data`}, {`name`: `VBN`, `value`: `snowden`}], `lead_paragraph`: `what does edward snowden have to do with Moore's law? The intersection between big data and model capacity at @OSDCpire #osdcpire15`, `pub_date`: `2015-06-09T09:51:11Z`}
+{`headline`: `nampho2`, `keywords`: [{`name`: `VBP`, `value`: `believe`}, {`name`: `VBG`, `value`: `running`}, {`name`: `NN`, `value`: `openstack`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `sullivan`}], `lead_paragraph`: `I believe @OSDCpire Sullivan is running @OpenStack Essex #OSDCPIRE15`, `pub_date`: `2015-06-09T09:47:05Z`}
+{`headline`: `JPiscionere`, `keywords`: [{`name`: `VB`, `value`: `make`}, {`name`: `VB`, `value`: `take`}, {`name`: `VB`, `value`: `underestimate`}, {`name`: `NN`, `value`: `decade`}, {`name`: `NN`, `value`: `experience`}, {`name`: `NN`, `value`: `importance`}, {`name`: `NN`, `value`: `interface`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `user`}, {`name`: `NN`, `value`: `web`}], `lead_paragraph`: `it can take a decade to make web interface that works. Don't underestimate the importance of the user experience! @OSDCpire #osdcpire15`, `pub_date`: `2015-06-09T09:41:30Z`}
+{`headline`: `VivaLaRouge`, `keywords`: [{`name`: `NN`, `value`: `access`}, {`name`: `NN`, `value`: `science`}, {`name`: `NN`, `value`: `tony`}], `lead_paragraph`: `Tony Hey's (now) open access paper on open science http://t.co/g26KRkkqMh #osdcpire15`, `pub_date`: `2015-06-09T08:42:33Z`}
+{`headline`: `VivaLaRouge`, `keywords`: [{`name`: `VBG`, `value`: `walking`}, {`name`: `NNS`, `value`: `https`}, {`name`: `NN`, `value`: `amsterdam`}, {`name`: `NN`, `value`: `canalsofinstagram`}, {`name`: `NN`, `value`: `home`}, {`name`: `NN`, `value`: `nofilter`}], `lead_paragraph`: `Walking home from the #osdcpire15 workshop. #canalsofinstagram #nofilter #Amsterdam https://t.co/hWvuH3iDFr`, `pub_date`: `2015-06-09T08:42:09Z`}
+{`headline`: `VivaLaRouge`, `keywords`: [{`name`: `VBG`, `value`: `quoting`}, {`name`: `NNS`, `value`: `ones`}, {`name`: `NNS`, `value`: `problems`}, {`name`: `NN`, `value`: `atkinson`}, {`name`: `NN`, `value`: `gray`}, {`name`: `NN`, `value`: `jim`}, {`name`: `NN`, `value`: `malcolm`}, {`name`: `NN`, `value`: `osdcpire`}], `lead_paragraph`: `Malcolm Atkinson quoting Jim Gray at #osdcpire15: \`May all your problems be technical ones\` @OSDCpire`, `pub_date`: `2015-06-09T08:27:46Z`}
+{`headline`: `OpenScienceCafe`, `keywords`: [{`name`: `NNS`, `value`: `https`}, {`name`: `NN`, `value`: `aist`}, {`name`: `NN`, `value`: `japan`}, {`name`: `NN`, `value`: `learning`}, {`name`: `NN`, `value`: `library`}, {`name`: `NN`, `value`: `machine`}, {`name`: `NN`, `value`: `osdcpire`}], `lead_paragraph`: `scalable machine learning library for Hive/Hadoop from AIST in Japan @OSDCpire #osdcpire15 https://t.co/IVNWN6l8Dx`, `pub_date`: `2015-06-09T07:29:37Z`}
+{`headline`: `stu_bailey`, `keywords`: [{`name`: `VBG`, `value`: `learning`}, {`name`: `NN`, `value`: `hey`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `reproducibility`}, {`name`: `NN`, `value`: `research`}], `lead_paragraph`: `RT @OSDCpire: Learning about #openscience and #research reproducibility from Tony Hey #osdcpire15 http://t.co/hHYJNbGhNB`, `pub_date`: `2015-06-09T04:00:07Z`}
+{`headline`: `OSDCpire`, `keywords`: [{`name`: `VBG`, `value`: `exciting`}, {`name`: `VBG`, `value`: `hosting`}, {`name`: `NNS`, `value`: `talks`}, {`name`: `NN`, `value`: `commit`}, {`name`: `NN`, `value`: `on…`}, {`name`: `NN`, `value`: `paolagrossowork`}, {`name`: `NN`, `value`: `uva`}, {`name`: `NN`, `value`: `week`}, {`name`: `NN`, `value`: `workshop`}], `lead_paragraph`: `RT @PaolaGrossoWork: Here we are.  #UvA #SNE #COMMIT are hosting again the #OSDCPIRE15 workshop: one week of exciting talks and tutorial on…`, `pub_date`: `2015-06-08T21:47:25Z`}
+{`headline`: `VAsilkA44`, `keywords`: [{`name`: `VBG`, `value`: `telling`}, {`name`: `NNS`, `value`: `articles`}, {`name`: `NN`, `value`: `anderson`}, {`name`: `NN`, `value`: `bigdata`}, {`name`: `NN`, `value`: `bob`}, {`name`: `NN`, `value`: `phil`}], `lead_paragraph`: `RT @OSDCpire: bob is telling us about one of his favorite articles: \`more is different\` by Phil Anderson #bigdata #osdcpire15 http://t.co/g…`, `pub_date`: `2015-06-08T21:03:41Z`}
+{`headline`: `VAsilkA44`, `keywords`: [{`name`: `VBG`, `value`: `learning`}, {`name`: `NN`, `value`: `hey`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `reproducibility`}, {`name`: `NN`, `value`: `research`}], `lead_paragraph`: `RT @OSDCpire: Learning about #openscience and #research reproducibility from Tony Hey #osdcpire15 http://t.co/hHYJNbGhNB`, `pub_date`: `2015-06-08T21:03:30Z`}
+{`headline`: `amlightus`, `keywords`: [{`name`: `VBG`, `value`: `telling`}, {`name`: `NNS`, `value`: `articles`}, {`name`: `NN`, `value`: `anderson`}, {`name`: `NN`, `value`: `bigdata`}, {`name`: `NN`, `value`: `bob`}, {`name`: `NN`, `value`: `phil`}], `lead_paragraph`: `RT @OSDCpire: bob is telling us about one of his favorite articles: \`more is different\` by Phil Anderson #bigdata #osdcpire15 http://t.co/g…`, `pub_date`: `2015-06-08T20:29:55Z`}
+{`headline`: `amlightus`, `keywords`: [{`name`: `VBG`, `value`: `learning`}, {`name`: `NN`, `value`: `hey`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `reproducibility`}, {`name`: `NN`, `value`: `research`}], `lead_paragraph`: `RT @OSDCpire: Learning about #openscience and #research reproducibility from Tony Hey #osdcpire15 http://t.co/hHYJNbGhNB`, `pub_date`: `2015-06-08T20:28:44Z`}
+{`headline`: `HeidiLAlvarez`, `keywords`: [{`name`: `VBG`, `value`: `learning`}, {`name`: `NN`, `value`: `hey`}, {`name`: `NN`, `value`: `reproducibility`}, {`name`: `NN`, `value`: `research`}, {`name`: `NN`, `value`: `tony`}], `lead_paragraph`: `Learning about #openscience and #research reproducibility from Tony Hey #osdcpire15 http://t.co/WadTsbNgYf`, `pub_date`: `2015-06-08T20:28:12Z`}
+{`headline`: `PaolaGrossoWork`, `keywords`: [{`name`: `VBG`, `value`: `exciting`}, {`name`: `VBG`, `value`: `hosting`}, {`name`: `NNS`, `value`: `talks`}, {`name`: `NN`, `value`: `commit`}, {`name`: `NN`, `value`: `datascience`}, {`name`: `NN`, `value`: `sne`}, {`name`: `NN`, `value`: `uva`}, {`name`: `NN`, `value`: `week`}, {`name`: `NN`, `value`: `workshop`}], `lead_paragraph`: `Here we are.  #UvA #SNE #COMMIT are hosting again the #OSDCPIRE15 workshop: one week of exciting talks and tutorial on #DataScience!`, `pub_date`: `2015-06-08T15:37:54Z`}
+{`headline`: `OSDCpire`, `keywords`: [{`name`: `VBG`, `value`: `learning`}, {`name`: `NN`, `value`: `hey`}, {`name`: `NN`, `value`: `reproducibility`}, {`name`: `NN`, `value`: `research`}, {`name`: `NN`, `value`: `tony`}], `lead_paragraph`: `Learning about #openscience and #research reproducibility from Tony Hey #osdcpire15 http://t.co/hHYJNbGhNB`, `pub_date`: `2015-06-08T14:40:00Z`}
+{`headline`: `OpenCloudOCC`, `keywords`: [{`name`: `VBG`, `value`: `telling`}, {`name`: `NNS`, `value`: `articles`}, {`name`: `NN`, `value`: `anderson`}, {`name`: `NN`, `value`: `bigdata`}, {`name`: `NN`, `value`: `bob`}, {`name`: `NN`, `value`: `phil`}], `lead_paragraph`: `RT @OSDCpire: bob is telling us about one of his favorite articles: \`more is different\` by Phil Anderson #bigdata #osdcpire15 http://t.co/g…`, `pub_date`: `2015-06-08T13:13:19Z`}
+{`headline`: `NoSQLDigest`, `keywords`: [{`name`: `VBG`, `value`: `telling`}, {`name`: `NNS`, `value`: `articles`}, {`name`: `NN`, `value`: `anderson`}, {`name`: `NN`, `value`: `bigdata`}, {`name`: `NN`, `value`: `bob`}, {`name`: `NN`, `value`: `phil`}], `lead_paragraph`: `RT @OSDCpire: bob is telling us about one of his favorite articles: \`more is different\` by Phil Anderson #bigdata #osdcpire15 http://t.co/g…`, `pub_date`: `2015-06-08T08:40:57Z`}
+{`headline`: `OSDCpire`, `keywords`: [{`name`: `VBG`, `value`: `telling`}, {`name`: `NNS`, `value`: `articles`}, {`name`: `NN`, `value`: `anderson`}, {`name`: `NN`, `value`: `bigdata`}, {`name`: `NN`, `value`: `bob`}], `lead_paragraph`: `bob is telling us about one of his favorite articles: \`more is different\` by Phil Anderson #bigdata #osdcpire15 http://t.co/gCtaeiyAN4`, `pub_date`: `2015-06-08T08:15:38Z`}
+{`headline`: `cloudnewsday`, `keywords`: [{`name`: `VB`, `value`: `amsterdam`}, {`name`: `VBG`, `value`: `cloudcomputing`}, {`name`: `NN`, `value`: `datascience`}, {`name`: `NN`, `value`: `opensciencecafe`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `workshop`}], `lead_paragraph`: `RT @OpenScienceCafe: On my way to Amsterdam for @OSDCpire #datascience and #cloudcomputing workshop! #osdcpire15`, `pub_date`: `2015-06-06T22:49:05Z`}
+{`headline`: `OpenScienceCafe`, `keywords`: [{`name`: `VB`, `value`: `amsterdam`}, {`name`: `VBG`, `value`: `cloudcomputing`}, {`name`: `NN`, `value`: `datascience`}, {`name`: `NN`, `value`: `osdcpire`}, {`name`: `NN`, `value`: `way`}, {`name`: `NN`, `value`: `workshop`}], `lead_paragraph`: `On my way to Amsterdam for @OSDCpire #datascience and #cloudcomputing workshop! #osdcpire15`, `pub_date`: `2015-06-06T22:47:01Z`}
+"></textarea>
+<br>
+   <button type="button" class="btn btn-lg btn-primary">Arithmetic Compression</button>
+<br>
+<br>
+   <textarea class="form-control" rows="10" placeholder = "access 0.0106362178227 0.0106363943483 0.865654381684 0.865654399167
+aist 0.039958038685 0.0399883349156 0.928910368483 0.928913176017
+amsterdam 0.0486741636602 0.0486741636637 0.536140418414 0.536140418415
+analysis 0.0491922360229 0.0491922361831 0.838996523311 0.838996523326
+anderson 0.0499413413892 0.0499413417668 0.602489185091 0.602489185143
+applications 0.0632627440268 0.0632627440268 0.849532608224 0.849532608224
+articles 0.0696806573988 0.0696806580572 0.825578209033 0.825578209098
+atkinson 0.0790122403821 0.0790122404839 0.602435404457 0.602435404471
+believe 0.0926831848576 0.0926831851423 0.325414304652 0.325414304745
+bigdata 0.0955341242979 0.0955341243724 0.0766126628452 0.0766126629376
+bob 0.100077225524 0.10008042907 0.100077225524 0.10008042907
+business 0.1068853262 0.106885326291 0.86594394139 0.865943941401
+canalsofinstagram 0.110826588836 0.110826588836 0.537266940551 0.537266940551
+capacity 0.111519722742 0.111519722862 0.997635324338 0.997635324358
+causes 0.112926384533 0.112926443994 0.828776775256 0.828776786726
+cees 0.12320316242 0.12325582181 0.823334619921 0.823344778162
+cloudcomputing 0.139901001002 0.139901001002 0.349851525177 0.349851525177
+colleagues 0.148378001345 0.148378001345 0.829380350813 0.829380350813
+commit 0.148536119158 0.148536130351 0.904408151647 0.904408153667
+cookies 0.148990537072 0.148990540411 0.824976635882 0.824976636526
+data 0.172909432395 0.172911188443 0.0766056992333 0.0766100238304
+data cloud 0.1729122558 0.1729122558 0.212162181853 0.212162181854
+datascience 0.172925890379 0.172925890379 0.230849172618 0.230849172618
+de 0.179081632653 0.180789958229 0.233875021083 0.234984760138
+decade 0.179645013448 0.179645060581 0.233933047663 0.233933078281
+developing 0.184061144716 0.184061144716 0.349823707886 0.349823707886
+dispel4py 0.189825417212 0.189825417212 0.993943174709 0.993943174709
+distributed 0.189886555267 0.189886555267 0.183925843948 0.183925843948
+dwarves 0.212813557543 0.212813557704 0.829536925901 0.82953692594
+email 0.276306305304 0.276306823192 0.505772556967 0.50577287586
+exciting 0.327509221398 0.327509221402 0.349847139528 0.349847139532
+experience 0.327680245517 0.327680245518 0.230851854488 0.230851854488
+factors 0.32995695818 0.329956958734 0.862912234135 0.862912234347
+fall 0.330131702306 0.330132343615 0.510800262273 0.51080066416
+follow 0.333715549443 0.333715550278 0.974779050194 0.97477905048
+gray 0.353605845117 0.353608276701 0.982982475979 0.982983351287
+great 0.353827100671 0.353828010244 0.880187243568 0.880187592049
+hey 0.366763872491 0.366807268865 0.986304145593 0.986320697686
+home 0.373881957759 0.373883272385 0.277955433904 0.277956952971
+hosting 0.374370031179 0.374370031482 0.349850732445 0.349850732766
+hours 0.374493639397 0.374493770375 0.864219541007 0.864219597832
+https 0.379760705376 0.379760938831 0.859311531365 0.859311632649
+importance 0.4281775187 0.4281775187 0.23076782583 0.230767825831
+interface 0.433582572072 0.433582572075 0.226955310929 0.226955310933
+intersection 0.433583817634 0.433583817634 0.600718806164 0.600718806164
+japan 0.466391097244 0.466391133138 0.562943458248 0.562943485271
+jim 0.467342180083 0.467345067797 0.545551846197 0.545554267718
+keywords 0.474826521574 0.474826521581 0.820728366132 0.820728366136
+law 0.491108610988 0.491162099603 0.966788435885 0.966817698556
+learning 0.497830950994 0.497830951091 0.349808611632 0.349808611776
+library 0.506000895406 0.506000895988 0.994850238788 0.994850239101
+machine 0.535993035983 0.535993036534 0.28193811662 0.281938117553
+make 0.536683849798 0.536685249361 0.268573885677 0.268576257771
+malcolm 0.536727280768 0.536727281034 0.547818774541 0.547818774806
+meta 0.543097544695 0.543098770886 0.0779665167962 0.0779743955338
+minute 0.54585765853 0.545857664584 0.322473949166 0.322473959427
+model 0.550563754417 0.550563971821 0.498569364527 0.498569591418
+napkin 0.5630554141 0.563055429849 0.585953285075 0.585953300824
+nofilter 0.60017480683 0.60017480687 0.760321734275 0.760321734305
+on 0.661210153483 0.663937801868 0.598719008264 0.601748148546
+ones 0.662556742179 0.662589091425 0.826461486823 0.826486950198
+opensciencecafe 0.671244899758 0.671244899758 0.252421118261 0.252421118261
+openstack 0.671246184919 0.671246184924 0.470881818977 0.470881818984
+osdcpire 0.679076904202 0.679076904342 0.303103256875 0.303103257169
+paolagrossowork 0.694239013203 0.694239013203 0.483105713901 0.483105713901
+people 0.705208062287 0.705208094579 0.274638903744 0.274638976019
+phil 0.708800847287 0.708803070747 0.507128118486 0.507131182819
+potential 0.723555768747 0.723555768764 0.488974675736 0.488974675759
+predict 0.726844993038 0.726844997856 0.886558977623 0.886558981412
+problem 0.728075505873 0.728075506202 0.542052758795 0.542052759229
+problems 0.728075506347 0.728075506385 0.845266174666 0.845266174697
+python 0.73820030309 0.738200305983 0.600382827257 0.600382830687
+quoting 0.738930645843 0.738930645845 0.349849440271 0.349849440276
+reproducibility 0.758921819537 0.758921819537 0.997670850622 0.997670850622
+research 0.759647547202 0.759647547391 0.363029343793 0.363029344192
+running 0.802590562105 0.802590562368 0.349807612277 0.349807612867
+science 0.81550045496 0.815500461562 0.230849171085 0.23084918867
+sent 0.826598347107 0.826628679854 0.91351615177 0.913544533655
+size 0.839748909717 0.839749062886 0.32982882855 0.329829236496
+smatlockuncc 0.844939889303 0.844939889303 0.116799074482 0.116799074482
+sne 0.847497048406 0.84767350786 0.284835193732 0.285305173339
+snowden 0.849695910294 0.849695911143 0.574295140964 0.574295142162
+sullivan 0.874905715478 0.874905715485 0.564421997243 0.564421997253
+surprised 0.875322494964 0.875322494966 0.183423724736 0.183423724744
+take 0.881076135789 0.881079751325 0.268636112943 0.26864640441
+talks 0.881273447095 0.881273742179 0.840589880389 0.840590195756
+telling 0.895084140667 0.895084141442 0.349796290243 0.349796292265
+tony 0.918761359211 0.918765993826 0.992382673377 0.992387027928
+underestimate 0.950820519232 0.950820519232 0.316168839328 0.316168839328
+uploaded 0.953833731585 0.953833731599 0.179972686341 0.179972686403
+use 0.956029684601 0.956087304014 0.315321777396 0.31548941813
+user 0.956158761161 0.956168175577 0.760050742254 0.760061954589
+uva 0.958903781326 0.958904795292 0.0840625814563 0.0840737653536
+videos 0.962316241335 0.962316253916 0.852316165842 0.852316179678
+vivalarouge 0.962745667692 0.962745667692 0.255735455705 0.255735455705
+walking 0.966814472755 0.966814472802 0.34979190471 0.349791904837
+way 0.967343412196 0.967363063942 0.983292606449 0.983311862351
+web 0.969147312462 0.969150674674 0.09378633308 0.0938168765542
+week 0.969419704856 0.96942124119 0.473412304318 0.473415393374
+workshop 0.975010634867 0.975010634871 0.721888629525 0.72188862953
+year 0.985705783705 0.985715216509 0.740897749192 0.740909447085
+youtube 0.993892702918 0.993892702943 0.226644932655 0.226644932731"></textarea>
+
+<br>
+
+<div>
+<img src="compression_graph_osdcpire15.png">
+</div>
+  <button type="button" class="btn btn-lg btn-primary">Hidden Markov Model</button>
+
+      <div class="page-header">
+        <h1>Browse and Upload Datasets</h1>
+      </div>
+
+      <div class="table-responsive"> 
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>User</th>
+                    <th>Date</th>
+                    <th>See Code</th>
+                    <th>Data Format</th>
+                    <th>See Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Twitter Keyword Data</td>
+                    <td>Nouns and verbs from tweets found using keyword 'data'</td>
+                    <td>gracelu</td>
+                    <td>6/9/15</td>
+                    
+                      <td><a href="https://github.com/gracelu/Daisy/blob/master/tweet%20code/tstream_time4.py">tstream_time4.py</a></td>
+                      <td>txt</td>
+                    <td><a href="https://github.com/gracelu/Daisy/blob/master/tweet%20code/data_sample.txt">data_sample.txt</a></td>
+                </tr>
+                <tr>
+                     <td>Twitter Public Data</td>
+                    <td>Nouns and verbs from tweets streamed from public timeline using NLTK</td>
+                    <td>gracelu</td>
+                    <td>6/9/15</td>
+                
+                      <td><a href="https://github.com/gracelu/Daisy/blob/master/tweet%20code/public_tweet_format3.py">public_tweet_format3.py</a></td>
+                      <td>txt</td>
+                   <td><a href="https://github.com/gracelu/Daisy/blob/master/tweet%20code/public_sample2.txt">public_sample2.txt</a></td>
+                </tr>
+         
+            </tbody>
+        </table>
+    </div>
+      
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="https://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="https://github.com/blueimp/JavaScript-Canvas-to-Blob/blob/master/js/canvas-to-blob.js"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="js/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="js/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="js/jquery.fileupload-image.js"></script>
+<!-- The File Upload audio preview plugin -->
+<script src="js/jquery.fileupload-audio.js"></script>
+<!-- The File Upload video preview plugin -->
+<script src="js/jquery.fileupload-video.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="js/jquery.fileupload-validate.js"></script>
+
+<script>
+$(function () {
+    'use strict';
+    // Change this to the location of your server-side upload handler:
+    var url = window.location.hostname === 'blueimp.github.io' ?
+                '//jquery-file-upload.appspot.com/' : 'server/php/',
+        uploadButton = $('<button/>')
+            .addClass('btn btn-primary')
+            .prop('disabled', true)
+            .text('Processing...')
+            .on('click', function () {
+                var $this = $(this),
+                    data = $this.data();
+                $this
+                    .off('click')
+                    .text('Abort')
+                    .on('click', function () {
+                        $this.remove();
+                        data.abort();
+                    });
+                data.submit().always(function () {
+                    $this.remove();
+                });
+            });
+    $('#fileupload').fileupload({
+        url: url,
+        //dataType: 'json',
+        autoUpload: false,
+        //acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i,
+        maxFileSize: 999000,
+        // Enable image resizing, except for Android and Opera,
+        // which actually support image resizing, but fail to
+        // send Blob objects via XHR requests:
+        disableImageResize: /Android(?!.*Chrome)|Opera/
+            .test(window.navigator.userAgent),
+        previewMaxWidth: 100,
+        previewMaxHeight: 100,
+        previewCrop: true
+    }).on('fileuploadadd', function (e, data) {
+        data.context = $('<div/>').appendTo('#files');
+        $.each(data.files, function (index, file) {
+            var node = $('<p/>')
+                    .append($('<span/>').text(file.name));
+            if (!index) {
+                node
+                    .append('<br>')
+                    .append(uploadButton.clone(true).data(data));
+            }
+            node.appendTo(data.context);
+        });
+    }).on('fileuploadprocessalways', function (e, data) {
+        var index = data.index,
+            file = data.files[index],
+            node = $(data.context.children()[index]);
+        if (file.preview) {
+            node
+                .prepend('<br>')
+                .prepend(file.preview);
+        }
+        if (file.error) {
+            node
+                .append('<br>')
+                .append($('<span class="text-danger"/>').text(file.error));
+        }
+        if (index + 1 === data.files.length) {
+            data.context.find('button')
+                .text('Upload')
+                .prop('disabled', !!data.files.error);
+        }
+    }).on('fileuploadprogressall', function (e, data) {
+        var progress = parseInt(data.loaded / data.total * 100, 10);
+        $('#progress .progress-bar').css(
+            'width',
+            progress + '%'
+        );
+    }).on('fileuploaddone', function (e, data) {
+        $.each(data.result.files, function (index, file) {
+            if (file.url) {
+                var link = $('<a>')
+                    .attr('target', '_blank')
+                    .prop('href', file.url);
+                $(data.context.children()[index])
+                    .wrap(link);
+            } else if (file.error) {
+                var error = $('<span class="text-danger"/>').text(file.error);
+                $(data.context.children()[index])
+                    .append('<br>')
+                    .append(error);
+            }
+        });
+    }).on('fileuploadfail', function (e, data) {
+        $.each(data.files, function (index) {
+            var error = $('<span class="text-danger"/>').text('File upload failed.');
+            $(data.context.children()[index])
+                .append('<br>')
+                .append(error);
+        });
+    }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+});
+</script>
+
+  </body>
+</html>
