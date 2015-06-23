@@ -1,6 +1,10 @@
 # Daisy
 data made easy
 
+Winner of the 2015 Open Science Data Cloud Challenge! 
+http://delaat.net/pire/2015/index.html
+http://pire.opensciencedatacloud.org/workshops/talks-amsterdam-2015-workshop/
+
 Making data science accessible to all researchers by providing a cloud-based data and workflow portal to aid with data retrieval, analysis, visualization, problem identification, and collaboration.
 
 Live static webpage: http://vpac00.phy.vanderbilt.edu/~piscioja/daisy.html
