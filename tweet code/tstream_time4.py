@@ -28,10 +28,10 @@ def oauth_login():
     # empty string values that are defined as placeholders.
     # See https://dev.twitter.com/docs/auth/oauth for more information
     # on Twitter's OAuth implementation.
-    CONSUMER_KEY = '4FtnZIPVDrsHHj8wO8amoQ'
-    CONSUMER_SECRET = '2h08yY97XElbKK8ZNQypI8wJtCewtMDD8j0Xc3DdfkU'
-    OAUTH_TOKEN = '582174814-X5NJBNnghiXq5O9XQuCl9NN0GxWa2CyFhLWrwwRG'
-    OAUTH_TOKEN_SECRET = 'aqXMX8Jy9uvG04zKB8kboaPUD6a5KfmmZGhfIdN74'
+    CONSUMER_KEY = '###'
+    CONSUMER_SECRET = '###'
+    OAUTH_TOKEN = '###'
+    OAUTH_TOKEN_SECRET = '###'
     
     auth = twitter.oauth.OAuth(OAUTH_TOKEN, OAUTH_TOKEN_SECRET,
                                CONSUMER_KEY, CONSUMER_SECRET)
@@ -179,10 +179,10 @@ def find_keywords(tweet_texti):
                         tmp_kword={}
     return tmp_klist
 
-consumer_key = '4FtnZIPVDrsHHj8wO8amoQ'
-consumer_secret = '2h08yY97XElbKK8ZNQypI8wJtCewtMDD8j0Xc3DdfkU'
-access_token = '582174814-X5NJBNnghiXq5O9XQuCl9NN0GxWa2CyFhLWrwwRG'
-access_token_secret = 'aqXMX8Jy9uvG04zKB8kboaPUD6a5KfmmZGhfIdN74'
+consumer_key = '###'
+consumer_secret = '###'
+access_token = '###'
+access_token_secret = '###'
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)

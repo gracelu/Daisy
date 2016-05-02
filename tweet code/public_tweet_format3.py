@@ -136,12 +136,12 @@ class StreamWatcherHandler(tweepy.StreamListener):
 def main():
     #num_tweets=0
     # establish stream
-    consumer_key = '4FtnZIPVDrsHHj8wO8amoQ'
-    consumer_secret = '2h08yY97XElbKK8ZNQypI8wJtCewtMDD8j0Xc3DdfkU'
+    consumer_key = '###'
+    consumer_secret = '###'
     auth1 = tweepy.auth.OAuthHandler(consumer_key, consumer_secret)
     
-    access_token = '582174814-X5NJBNnghiXq5O9XQuCl9NN0GxWa2CyFhLWrwwRG'
-    access_token_secret = 'aqXMX8Jy9uvG04zKB8kboaPUD6a5KfmmZGhfIdN74'
+    access_token = '###'
+    access_token_secret = '###'
     auth1.set_access_token(access_token, access_token_secret)
     
     #print "Establishing stream...",
